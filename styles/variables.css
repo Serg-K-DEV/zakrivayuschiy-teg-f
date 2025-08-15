@@ -4,7 +4,7 @@
 :root {
   /*Шрифты*/
   --font-primary: 'Inter', sans-serif;
-  --font-accent: 'PressStart2P', monospace;
+  --font-accent: 'PressStart2P', fantasy;
   --card-title-weight: 715;
   --card-text-weight: 410;
   --text-color: #000;

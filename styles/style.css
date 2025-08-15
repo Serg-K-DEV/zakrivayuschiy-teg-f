@@ -86,35 +86,35 @@
   block-size: 100%;
 }
 
-.image-1 {
+.image-brightness {
   filter: brightness(200%);
 }
 
-.image-2 {
+.image-contrast {
   filter: contrast(20%);
 }
 
-.image-3 {
+.image-blur {
   filter: blur(0.3rem);
 }
 
-.image-4 {
+.image-opacity {
   filter: opacity(0.6);
 }
 
-.image-5 {
+.image-hue-rotate {
   filter: hue-rotate(-50deg);
 }
 
-.image-6 {
+.image-saturate {
   filter: saturate(185%);
 }
 
-.image-7 {
+.image-sepia {
   filter: sepia(80%);
 }
 
-.image-8 {
+.image-filter-multiple {
   filter: contrast(2) brightness(200%) opacity(0.8);
 }
 
@@ -270,8 +270,8 @@
   gap: 20px;
 }
 
-.dialog__content-image {
-  inline-size: 39px;
+.dialog__content .dialog__content-image {
+  min-inline-size: 39px;
   block-size: 39px;
 }
 
