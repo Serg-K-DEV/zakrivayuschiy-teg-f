@@ -11,23 +11,23 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
   color: var(--text-color);
   font-family: var(--font-primary);
-  font-variation-settings: 'wght' var(--card-text-weight);
   background-image:
     var(--gradient-first),
     var(--gradient-second),
     var(--gradient-third);
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  font-variation-settings: 'wght' var(--card-text-weight);
 }
 
 .header {
   font-family: var(--font-accent);
-  text-transform: uppercase;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .header__block {
@@ -37,12 +37,12 @@
   align-items: center;
   gap: 20px;
 
-  background-color: var(--bg-color);
-
   margin: 97px auto;
   border: 2px solid var(--border-color);
-  inline-size: var(--block-width);
   padding-block: clamp(7.625rem, 0.751vw + 7.449rem, 8.125rem);
+
+  background-color: var(--bg-color);
+  inline-size: var(--block-width);
 }
 
 .header__title {
@@ -61,15 +61,15 @@
 }
 
 .card-list-item {
-  inline-size: var(--block-width);
-  background-color: var(--bg-color);
   border: 2px solid var(--border-color);
+  background-color: var(--bg-color);
+  inline-size: var(--block-width);
 }
 
 .card__title {
+  padding: 5px 10px;
   font-size: 18px;
   font-variation-settings: 'wght' var(--card-title-weight);
-  padding: 5px 10px;
 }
 
 .card__block-image {
@@ -80,10 +80,10 @@
 }
 
 .card__image {
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .image-1 {
@@ -120,25 +120,25 @@
 
 .label__image {
   position: absolute;
-  inset-block-start: 25px;
-  inset-inline-end: 25px;
+  opacity: 0.5;
   font-family: var(--font-accent);
   font-size: 14px;
   text-transform: uppercase;
-  mix-blend-mode: hard-light;
-  opacity: 0.5;
   text-shadow: 
     0 -1px var(--label-color),
     1px 0 var(--label-color),
     0 1px var(--label-color),
     -1px 0 var(--label-color);
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
+  mix-blend-mode: hard-light;
 }
 
 @supports ((text-stroke: 1px var(--label-color)) or (-webkit-text-stroke: 1px var(--label-color))) {
   .label__image {
+    text-shadow: none;
     -webkit-text-stroke: 1px var(--label-color);
     text-stroke: 1px var(--label-color);
-    text-shadow: none;
   }
 }
 
@@ -148,29 +148,29 @@
 
 .card__text {
   margin-block-end: 25px;
-  line-height: 117%;
   font-size: 18px;
+  line-height: 117%;
 }
 
 .button {
   position: relative;
-  cursor: pointer;
-  font-family: var(--font-accent);
-  background-color: var(--bg-color);
   border: 2px solid var(--border-color);
+  font-family: var(--font-accent);
   font-size: 14px;
   line-height: 90%;
+  background-color: var(--bg-color);
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .button::after {
-  content: '';  
+  content: '';
   position: absolute;
   inset: 0;
   background-color: var(--border-color);
+  transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::after {
@@ -182,8 +182,8 @@
 }
 
 .button:focus-visible {
-  outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
+  outline: none;
 }
 
 .card__block-button {
@@ -194,8 +194,8 @@
 
 .card__icon-button {
   border: none;
-  background-color: transparent;
   padding: 0;
+  background-color: transparent;
 }
 
 .like-icon {
@@ -255,13 +255,13 @@
 .dialog[open] {
   display: flex;
   flex-direction: column;
-  inline-size: 353px;
   gap: 30px;
   border: 2px solid var(--border-color);
   padding: 30px;
   font-family: var(--font-accent);
-  background-color: var(--bg-color);
   text-transform: uppercase;
+  background-color: var(--bg-color);
+  inline-size: 353px;
 }
 
 .dialog__content {
@@ -287,8 +287,8 @@
 }
 
 .dialog::backdrop {
-  background-color: black;
   opacity: 0.75;
+  background-color: black;
 }
 
 @media (width <= 375px) {
