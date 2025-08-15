@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+
+:root {
+  /*Шрифты*/
+  --font-primary: 'Inter', sans-serif;
+  --font-accent: 'PressStart2P', monospace;
+  --card-title-weight: 715;
+  --card-text-weight: 410;
+  --text-color: #000;
+  --bg-color: #fff;
+  --border-color: #000;
+  --label-color: #fff;
+  --button-accent-color: #fff;
+
+  /*Градиент*/
+  --gradient-first: repeating-linear-gradient(#d3d3d3 0px 2px, transparent 2px 4px);
+  --gradient-second: repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px);
+  --gradient-third: linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  
+  /*Ширина блоков*/
+  --block-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+
+  /*Анимации*/
+  --animation-contour-color: #000;
+  --animation-main-body-color: #FF0000;
+  --anitation-core-color: #fff;
+  --anitation-sparks-color: #FF0000;
+}
